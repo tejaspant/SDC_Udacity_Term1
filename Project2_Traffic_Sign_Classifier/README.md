@@ -3,9 +3,9 @@
 
 ## Overview
 ---
-In this project, we use deep neural networks and convolutional neural networks to classify traffic signs. Specifically, we use the [LeNet-5](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) convolutional neural network architecture to train and validate a model which can classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After training the model we test it on German traffic signs find on the web. The objectives of the project can be summarized as below:
+In this project, we use deep neural networks and convolutional neural networks to classify traffic signs. Specifically, we use the [LeNet-5](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) convolutional neural network architecture to train and validate a model which can classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After training the model we test it on German traffic signs found on the web. The objectives of the project can be summarized as below:
 
-* Load the data set (see below for links to the project data set)
+* Load the German Traffic Sign data set
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
@@ -41,7 +41,7 @@ Following is the information about the data set:
 
 ## Visualization of Dataset
 ---
-The distribution of the images into different classes for the training, validation and test set is shown below. This helps us get a brief idea about the statistics of the data
+The distribution of the different classes of images for the training, validation and test set is shown below. This helps us get a brief idea about the statistics of the data
 ![alt text][image1]
 
 ![alt text][image2]
@@ -52,7 +52,7 @@ The distribution of the images into different classes for the training, validati
 ---
 Preprocessing of the available data set involved two steps:
 
-#### 1. Convert the image to grayscale. This was done using the OpenCV library. Here is a sample grayscale image:
+#### 1. Convert the image to grayscale. This is done using the OpenCV library. Here is a sample grayscale image:
 
 ![alt text][image4]
 
@@ -62,7 +62,7 @@ Preprocessing of the available data set involved two steps:
 
 ## Model Architecture
 ---
-As mentioned previously the architecture similar to LeNet-5 is used.  The final model architecture is:
+As mentioned previously the architecture similar to LeNet-5.  The final model architecture is:
 
 | Layer         		|     Description	        					|
 |:---------------------:|:---------------------------------------------:|
@@ -91,7 +91,7 @@ To train the model, the following values of the hyperparameters are used:
 
 ## Solution Approach
 ---
-Using the above hyperparameters and the convolutional neural network architecture, it was observed that the validation set accuracy was not reaching the minimum 0.93 value as specified in the problem statement.
+Using the above hyperparameters and the convolutional neural network architecture, intially it was observed that the validation set accuracy was not reaching the minimum 0.93 value as specified in the problem statement.
 To resolve this issue, an augmented data set was developed. The development of this dataset is discussed below.
 
 ## Generating Augmented Dataset
@@ -104,7 +104,7 @@ After doing this the distribution of the data set for training and validation is
 
 ![alt text][image7]
 
-A more uniform distribution of the samples over all the classes can be seen for both the training and validation data set. This helps in training the model better. The final number of training samples is 89567.
+A more uniform distribution of the samples over all the classes can be seen for both the training and validation data set. This helps in training the model better. The final size of the training set is 89567.
 With the augmented dataset, a validation set accuracy of around **98.8%** is achieved.
 
 ## Acquiring New Images
