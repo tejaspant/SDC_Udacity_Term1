@@ -62,8 +62,7 @@ Preprocessing of the available data set involved two steps:
 
 ## Model Architecture
 ---
-As mentioned previously the architecture similar to LeNet-5 is used.  The model architecture is:
-My final model consisted of the following layers:
+As mentioned previously the architecture similar to LeNet-5 is used.  The final model architecture is:
 
 | Layer         		|     Description	        					|
 |:---------------------:|:---------------------------------------------:|
