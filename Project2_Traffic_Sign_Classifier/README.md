@@ -58,6 +58,8 @@ Preprocessing of the available data set involved two steps:
 
 #### 2. Normalize the grayscale so that the mean is zero. Here is a comparison between the original image and the final normalized grayscale image:
 
+![alt text][image4]
+
 ## Model Architecture
 ---
 As mentioned previously the architecture similar to LeNet-5 is used.  The model architecture is:
@@ -104,7 +106,7 @@ After doing this the distribution of the data set for training and validation is
 ![alt text][image7]
 
 A more uniform distribution of the samples over all the classes can be seen for both the training and validation data set. This helps in training the model better. The final number of training samples is 89567.
-With the augmented dataset, a validation set accuracy of around 98.8% is achieved.
+With the augmented dataset, a validation set accuracy of around **98.8%** is achieved.
 
 ## Acquiring New Images
 ---
