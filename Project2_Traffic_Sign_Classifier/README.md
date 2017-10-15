@@ -28,6 +28,7 @@ In this project, we use deep neural networks and convolutional neural networks t
 [image12]: ./write_up_images/softmax_predictions4.png "Softmax Prediction Row 4"
 [image13]: ./write_up_images/softmax_predictions5.png "Softmax Prediction Row 5"
 [image14]: ./write_up_images/softmax_predictions6.png "Softmax Prediction Row 6"
+[image15]: ./write_up_images/sample_org_normalized.png "Compare Org and Normalized"
 
 ## Dataset Summary
 ---
