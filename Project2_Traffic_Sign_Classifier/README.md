@@ -113,8 +113,9 @@ With the augmented dataset, a validation set accuracy of around **98.8%** is ach
 ![alt text][image8]
 
 As can be seen from the images, there are a few challenges in classifying these images
-* The images in general are quite blurred
+* Resing the images to (32, 32, 3) size makes the images blurred 
 * The image in the second row and second column is not very clear to the naked eye
+* The brightness for a few images is a bit low
 
 ## Performance on Images
 ---
