@@ -56,7 +56,7 @@ Preprocessing of the available data set involved two steps:
 
 ![alt text][image4]
 
-2. Normalize the grayscale so that the mean is zero. Normalizing the features in the training set in general helps the improve convergence rate of gradient descent. Here is a comparison between the original image and the final normalized grayscale image:
+2. Normalize the grayscale so that the mean is zero. Normalizing the features in the training set in general helps to improve the convergence rate of gradient descent. Here is a comparison between the original image and the final normalized grayscale image:
 
 ![alt text][image15]
 
@@ -119,7 +119,7 @@ As can be seen from the images, there are a few challenges in classifying these 
 
 ## Performance on Images
 ---
-The model is correctly able to classify all the images and the accuracy of the results is **100%**. Compared to the accuracy of the test dataset of **92.38%**, the accuracy of the trained model on the new images is much higher. There are many possible reasons for such a high accuracy on the test images for eg. number of images is low hence higher accuracy percentage, better quality of images in terms of brightness and visibility. A more detailed discussion on the possible reasons for the better accuracy would require looking into the test dataset more and comparing images with the images taken from the net. Currently, this has not been done.
+The model is correctly able to classify all the images and the accuracy of the results is **100%**. Compared to the accuracy of the test dataset of **92.38%**, the accuracy of the trained model on the new images is much higher. There are many possible reasons for such a high accuracy on the test images for eg. number of images is low hence higher accuracy percentage, better quality of images in terms of brightness and visibility. A more detailed discussion on the possible reasons for the better accuracy would require looking into the test dataset more and comparing the test dataset images with the images taken from the net. Currently, this has not been done.
 
 ## SoftMax Probabilities
 ---
