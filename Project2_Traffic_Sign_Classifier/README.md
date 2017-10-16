@@ -52,11 +52,11 @@ The distribution of the different classes of images for the training, validation
 ---
 Preprocessing of the available data set involved two steps:
 
-#### 1. Convert the image to grayscale. This is done using the OpenCV library. Here is a sample grayscale image:
+1. Convert the image to grayscale. This is done using the OpenCV library. Using grayscaling, the total number of parameters in the convolutional neural network can be reduced since the size of the image is reduced to (32, 32, 1) from (32, 32, 3). The reduced number of parameters help in increasing the rate of convergence for the gradient descent method. Here is a sample grayscale image:
 
 ![alt text][image4]
 
-#### 2. Normalize the grayscale so that the mean is zero. Here is a comparison between the original image and the final normalized grayscale image:
+2. Normalize the grayscale so that the mean is zero. Normalizing the features in the training set in general helps the convergence rate of gradient descent. Here is a comparison between the original image and the final normalized grayscale image:
 
 ![alt text][image4]
 
