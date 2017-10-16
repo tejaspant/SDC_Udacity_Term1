@@ -83,15 +83,15 @@ As mentioned previously the architecture similar to LeNet-5.  The final model ar
 ## Training the Model
 ---
 To train the model, the following values of the hyperparameters are used:
-#### 1. Learning Rate for Adam Optimizer = 0.0009
+1. Learning Rate for Adam Optimizer = 0.0009
 
-#### 2. Number of Epochs = 30
+2. Number of Epochs = 30
 
-#### 3. Batch Size = 128
+3. Batch Size = 128
 
 ## Solution Approach
 ---
-Using the above hyperparameters and the convolutional neural network architecture, intially it was observed that the validation set accuracy was not reaching the minimum 0.93 value as specified in the problem statement.
+Using the above hyperparameters and the convolutional neural network architecture, intially it was observed that the validation set accuracy did not reach the minimum 0.93 value as specified in the problem statement.
 To resolve this issue, an augmented data set was developed. The development of this dataset is discussed below.
 
 ## Generating Augmented Dataset
@@ -105,7 +105,7 @@ After doing this the distribution of the data set for training and validation is
 ![alt text][image7]
 
 A more uniform distribution of the samples over all the classes can be seen for both the training and validation data set. This helps in training the model better. The final size of the training set is 89567.
-With the augmented dataset, a validation set accuracy of around **98.8%** is achieved.
+With the augmented dataset, a validation set accuracy of around **98.8%** is achieved. The test set accuracy is **92.38%**.
 
 ## Acquiring New Images
 ---
@@ -119,7 +119,7 @@ As can be seen from the images, there are a few challenges in classifying these 
 
 ## Performance on Images
 ---
-The model is correctly able to classify all the images and the accuracy of the results is 100%
+The model is correctly able to classify all the images and the accuracy of the results is **100%**. Compared to the accuracy of the test dataset of **92.38%**, the accuracy of the trained model on the new images is much higher. There are many possible reasons for such a high accuracy on the test images for eg. number of images is low hence higher accuracy percentage, better quality of images in terms of brightness and visibility. A more detailed discussion on the possible reasons for the better accuracy would require looking into the test dataset more and comparing images with the images taken from the net. Currently, this has not been done.
 
 ## SoftMax Probabilities
 ---
