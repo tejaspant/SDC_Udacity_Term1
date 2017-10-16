@@ -52,13 +52,13 @@ The distribution of the different classes of images for the training, validation
 ---
 Preprocessing of the available data set involved two steps:
 
-1. Convert the image to grayscale. This is done using the OpenCV library. Using grayscaling, the total number of parameters in the convolutional neural network can be reduced since the size of the image is reduced to (32, 32, 1) from (32, 32, 3). The reduced number of parameters help in increasing the rate of convergence for the gradient descent method. Here is a sample grayscale image:
+1. Convert the image to grayscale. This is done using the OpenCV library. Using grayscaling, the total number of parameters in the convolutional neural network can be reduced since the size of the image is reduced from (32, 32, 3) from (32, 32, 1). The reduced number of parameters help in increasing the rate of convergence for the gradient descent method. Here is a sample grayscale image:
 
 ![alt text][image4]
 
-2. Normalize the grayscale so that the mean is zero. Normalizing the features in the training set in general helps the convergence rate of gradient descent. Here is a comparison between the original image and the final normalized grayscale image:
+2. Normalize the grayscale so that the mean is zero. Normalizing the features in the training set in general helps the improve convergence rate of gradient descent. Here is a comparison between the original image and the final normalized grayscale image:
 
-![alt text][image4]
+![alt text][image15]
 
 ## Model Architecture
 ---
@@ -109,8 +109,12 @@ With the augmented dataset, a validation set accuracy of around **98.8%** is ach
 
 ## Acquiring New Images
 ---
-6 new images are obtained from the web to test the trained model. The test images are shown below. The images had to be reshaped to (32,32,3) size.
+6 new images are obtained from the web to test the trained model. The test images are shown below. The images had to be reshaped to (32,32,3) size. 
 ![alt text][image8]
+
+As can be seen from the images, there are a few challenges in classifying these images
+* The images in general are quite blurred
+* The image in the second row and second column is not very clear to the naked eye
 
 ## Performance on Images
 ---
