@@ -62,7 +62,14 @@ To calculate the position of the vehicle with respect to center of the lane, the
 Having calculated the fit for the lane lines and warped back onto the original image, the lane boundaries, radius of curvature and location from the center of the lane is calculated relatively accurately as can be seen below
 ![alt text][image6]
 
-##Provide a link to your final video output. Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!)
+## Provide a link to your final video output. Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!)
 ---
 Here is the link to the project video:
-[Project Video]()
+[Project Video](https://github.com/tejaspant/SDC_Udacity_Term1/blob/master/Project4_Advanced_Lane_Finding/output_project_video.mp4)
+The video can also be in the repository with name *output_project_video.mp4* 
+
+## Discussion
+---
+* The calculation of source points for the perspective transform was rather adhoc with different values tested. A more dynamic selection of the points would be useful if the camera is changed
+* The sliding window search starts from scratch for every frame currently. Identifying the lane lines based on previous frame can speed up the process of identification of lane lines
+* Currently smoothing has not be implemented. It can be an issue if the road is not fairly straight
