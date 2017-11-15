@@ -13,6 +13,8 @@ In this project we create a pipeline to detect lane boundaries in a video using 
 * Get the radius of curvature of the lane marking at a point closest to the camera
 * Calculate car offset from the center of the lane 
 
+The Jupyter Notebook can found in the zipped file P4_Advanced_Lane_Finding.zip
+
 [//]: # (Image References)
 
 [image1]: ./write_up_images/chess_board_distort_undistort.png "Camera Matrix Chessboard"
