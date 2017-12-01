@@ -51,11 +51,11 @@ To optimize the performance of the classifier, different color spaces, number of
 
 ## Provide a link to your final video output. Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives
 ---
-The name of the finale video is project_video_output.mp4. The pipeline seems to work reasonably on the project video with very few false positives.
+The name of the final video is project_video_output.mp4. The pipeline seems to work reasonably well on the project video with very few false positives.
 
 ## Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes
 ---
-By recording the history of the heat map, the number of false positives is reduced. This also helps to reduce the wobbling of the bounding boxes
+By recording the history of the heat map, the number of false positives is reduced. This also helps to reduce the wobbling of the bounding boxes.
 
 ## Discussion and scope for future work
 ---
