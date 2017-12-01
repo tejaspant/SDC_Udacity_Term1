@@ -36,7 +36,8 @@ Here is a sample car image with its extracted HOG image
 
 ## Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them)
 ---
-A linear SVM is trained using the HOG features along with color histogram features and binned color features.
+A linear SVM is trained using the HOG features along with color histogram features and binned color features. 
+The false positives predicted by the SVM are eliminated using a heat map. In the heat map (originally all pixel values are 0), 1 is added to the pixel value for every pixel within the boxes predicted by HOG sub sampling. Then a threshold is applied to the heat map which sets the local pixel value in the heat map to 0 if the local pixel value is less than the threshold. Currently the threshold value used in this study is 2. 
 
 ## Describe how (and identify where in your code) you implemented a sliding window search. How did you decide what scales to search and how much to overlap windows?
 ---
