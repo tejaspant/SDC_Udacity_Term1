@@ -21,8 +21,8 @@ Different color spaces were experimented and *YCrCb* was finalized. The HOG para
 * orientations = 10
 * pixels_per_cell = 8
 * cells_per_block = 2
-Here is a sample car image with its extracted HOG image
 
+Here is a sample car image with its extracted HOG image
 ![alt text][image1]
 
 ## Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them)
