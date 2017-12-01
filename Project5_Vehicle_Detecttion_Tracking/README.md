@@ -17,7 +17,16 @@ The objectives of the project can be summarized as below:
 
 ## Explain how (and identify where in your code) you extracted HOG features from the training images. Explain how you settled on your final choice of HOG parameters
 ---
-Different color spaces were experimented and *YCrCb* was finalized. The HOG parameters used were:
+To get the best results for extraction of HOG features from the images, firstly different color spaces were experimented like RGB, HSV, LUV, HLS, YUV, YCrCb keeping the HOG parameters constant. Out of these different color spaces, LUV and YCrCb gave the least false positives. In general, YCrCb seemed to outperform LUV. Using the YCrCb color space, the HOG parameters were tuned.
+
+The three HOG parameters 1) orientations 2) pixels_per_cell 3) cells_per_block were changed one at a time keeping the other two constant. The different values examined for the different paramters were: 
+
+* orientations = 8, 10, 12
+* pixels_per_cell = 6, 8, 10
+* cells_per_block = 2, 3, 4
+
+The combination of parameters which gave the least false positives on the test images and were finally used for extracting features from the images are:
+
 * orientations = 10
 * pixels_per_cell = 8
 * cells_per_block = 2
@@ -27,7 +36,7 @@ Here is a sample car image with its extracted HOG image
 
 ## Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them)
 ---
-A linear SVM is trained using the HOG features along with color histogram features and binned colo features.
+A linear SVM is trained using the HOG features along with color histogram features and binned color features.
 
 ## Describe how (and identify where in your code) you implemented a sliding window search. How did you decide what scales to search and how much to overlap windows?
 ---
@@ -46,3 +55,7 @@ The name of the finale video is project_video_output.mp4. The pipeline seems to 
 ## Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes
 ---
 By recording the history of the heat map, the number of false positives is reduced. This also helps to reduce the wobbling of the bounding boxes
+
+## Discussion and scope for future work
+---
+The current vehicle detection software pipeline is a rather crude implementation and there is scope for improvement. Firstly the pipeline detects vehicles on the other side of the lane as well. The HOG subsampling function needs to modififed to limit the search region in the X direction only to the driver's lane to remove these false positives. Besides this, when the two vehicles in the project video come closer, the bounding boxes merge into a single box. It would be a good idea associate a particular bounding box with a particular vehicle. The wobbling of the bounding boxes can also be reduced.  
