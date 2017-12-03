@@ -12,7 +12,7 @@ The objectives of this project is to use End-to-End Deep Learning to train a sel
 
 ## Is the code functional?
 ---
-The script used to train the model is *model.ipynb*. It generates the model *model.h5* which can be running using the script *drive.py*. The *drive.py* has been modified to pre-process the images taken by the center camera in the simulator. 
+The script used to train the model is *model.ipynb*. It generates the model *model.h5* which can be run using the script *drive.py*. The *drive.py* has been modified to pre-process the images taken by the center camera in the simulator. 
 
 ## Is the code usable and readable?
 ---
