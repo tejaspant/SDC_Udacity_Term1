@@ -20,11 +20,11 @@ The code has been commented well so that a user can use it. A Python generator h
 
 ## Has an appropriate model architecture been employed for the task?
 ---
-The exact model architecture from Nvidia's End-to-End for Self-Driving Cars(https://arxiv.org/abs/1604.07316) is used in this project. This architecture has 5 convolutional layers and 4 fully connected layers. The image is normalized before the convolutional layers.   
+The same model architecture from Nvidia's End-to-End for Self-Driving Cars(https://arxiv.org/abs/1604.07316) is used in this project without any modifications. This architecture has 5 convolutional layers and 4 fully connected layers. The image is normalized before the convolutional layers.   
 
 ## Has an attempt been made to reduce overfitting of the model?
 ---
-The dataset was split into 70% training data and 30% validation data. The model was trained for 5 epochs. Since the MSE error kept on decreasing for all the 5 epochs no effort was made to reduce overfitting.
+The dataset was split into 70% training data and 30% validation data. The model was trained for 5 epochs. Before finalizing the network architecture, dropout layers were added to prevent overfitting. However with the dropout layers, the performance of the trained model decreased and the car was not able successfully navgaite the track. So in the final architecture, no dropout layers are used and the MSE error decreases for the 5 epochs the model is trained.
 
 ## Have the model parameters been tuned appropriately?
 ---
