@@ -26,7 +26,7 @@ The Jupyter Notebook can found in the zipped file P4_Advanced_Lane_Finding.zip
 
 ## Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image
 ---
-The camera matrix matrix and distortion coefficients are obtained using the OpenCV functions *findChessboardCorners*, *calibrateCamera*. An example of an undistorted calibration image is shown below,
+The camera matrix and distortion coefficients are obtained using the OpenCV functions *findChessboardCorners*, *calibrateCamera*. An example of an undistorted calibration image is shown below,
 ![alt text][image1]
 
 ## Provide an example of a distortion-corrected image
